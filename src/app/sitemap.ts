@@ -11,12 +11,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 1.0,
+      images: [`${baseUrl}${siteConfig.images.portrait}`],
     },
     {
       url: `${baseUrl}/#about`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
+      images: [`${baseUrl}${siteConfig.images.portrait}`],
     },
     {
       url: `${baseUrl}/#education`,
@@ -47,6 +49,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.6,
+      images: [
+        `${baseUrl}${siteConfig.images.gallery1}`,
+        `${baseUrl}${siteConfig.images.gallery2}`,
+      ],
     },
     {
       url: `${baseUrl}/#contact`,

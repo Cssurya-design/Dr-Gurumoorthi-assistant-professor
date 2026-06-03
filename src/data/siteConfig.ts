@@ -1,6 +1,6 @@
 export const siteConfig = {
   // ⚠️ UPDATE THIS before deploying to production
-  siteUrl: "https://drgurumoorthi.com",
+  siteUrl: "https://drgurumoorthi-ap-commerce.vercel.app",
 
   name: "Dr. V. Gurumoorthi",
   fullName: "Dr. Gurumoorthi Velusamy",
