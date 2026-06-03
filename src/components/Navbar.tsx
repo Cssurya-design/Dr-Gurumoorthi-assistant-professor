@@ -126,14 +126,7 @@ export function Navbar() {
         </motion.a>
 
         {/* Desktop Links */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "0.15rem",
-          }}
-          className="hidden lg:flex"
-        >
+        <div className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -197,7 +190,7 @@ export function Navbar() {
 
         {/* Mobile Hamburger */}
         <button
-          className="lg:hidden"
+          className="lg:hidden flex items-center justify-center"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           style={{
@@ -305,6 +298,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setMobileOpen(false)}
+            onTouchStart={() => setMobileOpen(false)}
             style={{
               position: "fixed",
               inset: 0,
