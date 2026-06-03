@@ -557,7 +557,19 @@ export function HeroSection() {
                       >
                         {row.label}
                       </span>
-                      <span style={{ color: "#333", flex: 1, paddingLeft: "10px" }}>: {row.value}</span>
+                      <span style={{ color: "#333", flex: 1, paddingLeft: "10px" }}>
+                        : {row.label === "Email" ? (
+                          <a 
+                            href={`mailto:${row.value}`}
+                            onClick={(e) => e.stopPropagation()}
+                            style={{ color: "#1565C0", textDecoration: "none", position: "relative", zIndex: 10 }}
+                          >
+                            {row.value}
+                          </a>
+                        ) : (
+                          row.value
+                        )}
+                      </span>
                     </div>
                   ))}
                 </div>
