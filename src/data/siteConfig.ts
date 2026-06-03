@@ -45,6 +45,7 @@ export const siteConfig = {
     gallery1: "/images/gallery-1.jpeg",
     gallery2: "/images/gallery-2.jpeg",
     tnLogo: "/images/tn-logo.jpeg",
+    brandLogo: "/images/brand-logo.png",
   },
 
   documents: {
