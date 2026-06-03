@@ -47,7 +47,6 @@ export function ContactSection() {
             height: "200px",
             borderRadius: "50%",
             background: "radial-gradient(circle, rgba(212,168,67,0.06), transparent 60%)",
-            filter: "blur(30px)",
           }}
         />
         <motion.div
@@ -61,7 +60,6 @@ export function ContactSection() {
             height: "250px",
             borderRadius: "50%",
             background: "radial-gradient(circle, rgba(42,82,152,0.08), transparent 60%)",
-            filter: "blur(30px)",
           }}
         />
       </div>

@@ -157,7 +157,6 @@ export function HeroSection() {
               height: orb.size,
               borderRadius: "50%",
               background: `radial-gradient(circle, ${orb.color}, transparent 70%)`,
-              filter: "blur(40px)",
             }}
           />
         ))}
