@@ -33,12 +33,8 @@ export function GallerySection() {
         <SectionHeading title="Gallery" subtitle="Professional photographs" />
 
         <motion.div
+          className="max-w-[950px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"
           style={{
-            maxWidth: "950px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))",
-            gap: "1.75rem",
             y: contentY,
           }}
         >

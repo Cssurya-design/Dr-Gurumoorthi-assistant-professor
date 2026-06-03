@@ -26,14 +26,8 @@ export function EducationSection() {
     >
       {/* Subtle background parallax decoration */}
       <motion.div
+        className="absolute -top-[10%] left-1/2 -translate-x-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full pointer-events-none"
         style={{
-          position: "absolute",
-          top: "-10%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: "600px",
-          height: "600px",
-          borderRadius: "50%",
           background: "radial-gradient(circle, rgba(26,58,107,0.03), transparent 60%)",
           y: useTransform(scrollYProgress, [0, 1], [50, -80]),
           pointerEvents: "none",
@@ -47,11 +41,8 @@ export function EducationSection() {
         />
 
         <motion.div
+          className="max-w-[800px] mx-auto relative pl-[40px] md:pl-[50px] pr-2 md:pr-0"
           style={{
-            maxWidth: "800px",
-            margin: "0 auto",
-            position: "relative",
-            paddingLeft: "50px",
             y: contentY,
           }}
         >

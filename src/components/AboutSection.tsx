@@ -69,15 +69,7 @@ export function AboutSection() {
           subtitle="Dedicated educator and researcher in Commerce"
         />
 
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "3.5rem",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-14">
           {/* Photo with parallax */}
           <motion.div
             style={{ flex: "0 0 auto", position: "relative", y: photoY }}
@@ -174,9 +166,8 @@ export function AboutSection() {
 
           {/* Text with parallax */}
           <motion.div
+            className="flex-1 w-full max-w-[600px]"
             style={{
-              flex: "1 1 400px",
-              maxWidth: "600px",
               y: textY,
             }}
           >

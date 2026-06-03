@@ -79,12 +79,8 @@ export function ContactSection() {
         `}</style>
 
         <motion.div
+          className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6"
           style={{
-            maxWidth: "900px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "1.5rem",
             y: contentY,
           }}
         >

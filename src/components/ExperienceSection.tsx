@@ -21,13 +21,8 @@ export function ExperienceSection() {
       style={{ background: "var(--color-bg)", position: "relative", overflow: "hidden" }}
     >
       <motion.div
+        className="absolute -bottom-10 -right-10 w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full pointer-events-none"
         style={{
-          position: "absolute",
-          bottom: "0%",
-          right: "-10%",
-          width: "500px",
-          height: "500px",
-          borderRadius: "50%",
           background: "radial-gradient(circle, rgba(212,168,67,0.03), transparent 60%)",
           y: useTransform(scrollYProgress, [0, 1], [40, -60]),
           pointerEvents: "none",
@@ -41,11 +36,8 @@ export function ExperienceSection() {
         />
 
         <motion.div
+          className="max-w-[800px] mx-auto relative pl-[40px] md:pl-[50px] pr-2 md:pr-0"
           style={{
-            maxWidth: "800px",
-            margin: "0 auto",
-            position: "relative",
-            paddingLeft: "50px",
             y: contentY,
           }}
         >
@@ -132,11 +124,11 @@ export function ExperienceSection() {
                     <p style={{ fontSize: "0.92rem", fontWeight: 600, color: "var(--color-text)", marginBottom: "0.4rem" }}>
                       {exp.institution}
                     </p>
-                    <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "0.5rem" }}>
-                      <span style={{ display: "inline-flex", alignItems: "center", gap: "0.3rem", fontSize: "0.8rem", color: "var(--color-text-muted)" }}>
+                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-2">
+                      <span className="inline-flex items-center gap-1.5 text-sm text-gray-500">
                         <MapPin size={13} /> {exp.location}
                       </span>
-                      <span style={{ display: "inline-flex", alignItems: "center", gap: "0.3rem", fontSize: "0.8rem", color: "var(--color-gold-dark)", fontWeight: 600 }}>
+                      <span className="inline-flex items-center gap-1.5 text-sm text-[#b88d2e] font-semibold">
                         <Calendar size={13} /> {exp.from} — {exp.to}
                       </span>
                     </div>

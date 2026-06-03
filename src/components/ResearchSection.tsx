@@ -29,13 +29,8 @@ export function ResearchSection() {
       style={{ background: "var(--color-bg-alt)", position: "relative", overflow: "hidden" }}
     >
       <motion.div
+        className="absolute top-[20%] -left-[5%] w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full pointer-events-none"
         style={{
-          position: "absolute",
-          top: "20%",
-          left: "-5%",
-          width: "400px",
-          height: "400px",
-          borderRadius: "50%",
           background: "radial-gradient(circle, rgba(26,58,107,0.03), transparent 60%)",
           y: useTransform(scrollYProgress, [0, 1], [30, -50]),
           pointerEvents: "none",
@@ -49,12 +44,8 @@ export function ResearchSection() {
         />
 
         <motion.div
+          className="max-w-[900px] mx-auto flex flex-col gap-5"
           style={{
-            maxWidth: "900px",
-            margin: "0 auto",
-            display: "flex",
-            flexDirection: "column",
-            gap: "1.25rem",
             y: contentY,
           }}
         >
@@ -100,11 +91,12 @@ export function ResearchSection() {
                     <Icon size={20} style={{ color: colors.text }} />
                   </div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "0.75rem", marginBottom: "0.4rem", flexWrap: "wrap" }}>
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-3 mb-1.5">
                       <h3 style={{ fontSize: "0.98rem", fontWeight: 700, color: "var(--color-text)", lineHeight: 1.4, flex: 1 }}>
                         {pub.title}
                       </h3>
                       <span
+                        className="self-start sm:self-auto"
                         style={{
                           fontSize: "0.72rem",
                           fontWeight: 600,

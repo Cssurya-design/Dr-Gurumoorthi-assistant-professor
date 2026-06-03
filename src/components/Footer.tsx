@@ -31,18 +31,7 @@ export function Footer() {
         }}
       />
 
-      <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "2.5rem 1.5rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: "1.5rem",
-        }}
-      >
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
         {/* Brand Logo + Name */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -101,13 +90,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div
-          style={{
-            fontSize: "0.73rem",
-            textAlign: "right",
-            display: "flex",
-            alignItems: "center",
-            gap: "0.3rem",
-          }}
+          className="flex items-center gap-1.5 text-xs text-center md:text-right"
         >
           © {currentYear} {profile.name}. Made with
           <Heart size={12} style={{ color: "var(--color-gold)", fill: "var(--color-gold)" }} />

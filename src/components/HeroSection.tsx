@@ -165,26 +165,15 @@ export function HeroSection() {
 
       {/* Content with parallax */}
       <motion.div
+        className="max-w-[1200px] w-full pt-28 pb-12 px-4 md:px-6 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 relative z-10"
         style={{
-          maxWidth: "1200px",
-          width: "100%",
-          padding: "7rem 1.5rem 3rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "4rem",
-          flexWrap: "wrap",
-          position: "relative",
-          zIndex: 1,
           opacity: heroOpacity,
         }}
       >
         {/* Left: Welcome Text with parallax */}
         <motion.div
+          className="flex-1 max-w-[500px] text-white px-2 sm:px-0 text-center lg:text-left"
           style={{
-            flex: "1 1 360px",
-            maxWidth: "500px",
-            color: "white",
             y: textY,
           }}
         >
@@ -370,18 +359,15 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.85, rotateY: -15 }}
           animate={{ opacity: 1, scale: 1, rotateY: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+          className="flex-none perspective-[1200px] cursor-pointer"
           style={{
-            flex: "0 0 auto",
-            perspective: "1200px",
-            cursor: "pointer",
             y: cardY,
           }}
           onClick={() => setFlipped(!flipped)}
         >
           <motion.div
+            className="w-[310px] h-[460px] sm:w-[340px] sm:h-[500px] mx-auto scale-95 sm:scale-100 origin-center"
             style={{
-              width: "340px",
-              height: "500px",
               transformStyle: "preserve-3d",
               rotateX,
               rotateY,

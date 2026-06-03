@@ -36,12 +36,8 @@ export function AchievementsSection() {
         />
 
         <motion.div
+          className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
           style={{
-            maxWidth: "1000px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-            gap: "1.25rem",
             y: contentY,
           }}
         >
