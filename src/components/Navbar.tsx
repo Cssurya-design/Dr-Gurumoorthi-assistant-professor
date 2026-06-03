@@ -34,25 +34,11 @@ export function Navbar() {
 
   return (
     <header
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 100,
-        transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-        background: scrolled
-          ? "rgba(10, 22, 40, 0.92)"
-          : "rgba(10, 22, 40, 0.4)",
-        backdropFilter: "blur(20px) saturate(180%)",
-        WebkitBackdropFilter: "blur(20px) saturate(180%)",
-        boxShadow: scrolled
-          ? "0 4px 30px rgba(0,0,0,0.25), inset 0 -1px 0 rgba(212,168,67,0.15)"
-          : "none",
-        borderBottom: scrolled
-          ? "1px solid rgba(212,168,67,0.1)"
-          : "1px solid rgba(255,255,255,0.05)",
-      }}
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
+        scrolled
+          ? "bg-[#0a1628]/95 backdrop-blur-md shadow-lg border-b border-[#D4A843]/20"
+          : "bg-gradient-to-b from-[#050d1a]/80 to-transparent border-b border-transparent"
+      }`}
     >
       <nav
         style={{
