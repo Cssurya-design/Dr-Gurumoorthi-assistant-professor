@@ -33,14 +33,15 @@ export function Navbar() {
   }, [mobileOpen]);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
-        scrolled
-          ? "bg-[#0a1628]/95 backdrop-blur-md shadow-lg border-b border-[#D4A843]/20"
-          : "bg-gradient-to-b from-[#050d1a]/80 to-transparent border-b border-transparent"
-      }`}
-    >
-      <nav
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
+          scrolled
+            ? "bg-[#0a1628]/95 backdrop-blur-md shadow-lg border-b border-[#D4A843]/20"
+            : "bg-gradient-to-b from-[#050d1a]/80 to-transparent border-b border-transparent"
+        }`}
+      >
+        <nav
         style={{
           maxWidth: "1280px",
           margin: "0 auto",
@@ -190,7 +191,7 @@ export function Navbar() {
         >
           {mobileOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
-      </nav>
+      </header>
 
       {/* Mobile Drawer */}
       <AnimatePresence>
@@ -294,6 +295,6 @@ export function Navbar() {
           />
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }

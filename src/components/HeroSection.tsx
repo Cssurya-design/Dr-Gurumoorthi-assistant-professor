@@ -394,210 +394,106 @@ export function HeroSection() {
                   backfaceVisibility: "hidden",
                   borderRadius: "20px",
                   overflow: "hidden",
-                  background: "linear-gradient(180deg, #ffffff 0%, #f0f4ff 100%)",
+                  background: "#ffffff",
                   border: "1px solid rgba(21,101,192,0.15)",
                 }}
               >
-                {/* Blue Header */}
+                {/* Header Gradient */}
                 <div
                   style={{
-                    background: "linear-gradient(135deg, #1565C0, #0D47A1, #0a3280)",
-                    padding: "1rem 1.25rem 0.85rem",
+                    background: "linear-gradient(90deg, #fffbc7 0%, #ffeaf1 50%, #fadbf3 100%)",
+                    padding: "0.85rem 1rem",
                     textAlign: "center",
                     position: "relative",
-                    overflow: "hidden",
                   }}
                 >
-                  {/* Subtle pattern overlay */}
-                  <div
-                    style={{
-                      position: "absolute",
-                      inset: 0,
-                      background:
-                        "radial-gradient(circle at 20% 80%, rgba(255,255,255,0.05) 0%, transparent 50%)",
-                    }}
-                  />
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "0.5rem",
-                      marginBottom: "0.4rem",
-                      position: "relative",
-                    }}
-                  >
-                    <Image
-                      src={siteConfig.images.tnLogo}
-                      alt="Tamil Nadu Government Emblem"
-                      width={28}
-                      height={28}
-                      style={{ borderRadius: "50%", objectFit: "cover" }}
-                    />
-                    <div style={{ textAlign: "left" }}>
-                      <div
-                        style={{
-                          color: "#FFD54F",
-                          fontSize: "0.72rem",
-                          fontWeight: 700,
-                          lineHeight: 1.2,
-                        }}
-                      >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.25rem" }}>
+                    <Image src={siteConfig.images.brandLogo} alt="Left Logo" width={32} height={32} style={{ objectFit: "contain", mixBlendMode: "multiply" }} />
+                    <div style={{ flex: 1 }}>
+                      <div style={{ color: "#000", fontSize: "0.75rem", fontWeight: 700, lineHeight: 1.1 }}>
                         Government of Tamilnadu
                       </div>
-                      <div
-                        style={{
-                          color: "rgba(255,255,255,0.85)",
-                          fontSize: "0.6rem",
-                          fontWeight: 500,
-                        }}
-                      >
+                      <div style={{ color: "#000", fontSize: "0.65rem", fontWeight: 600 }}>
                         Department of Collegiate Education
                       </div>
                     </div>
+                    <Image src={siteConfig.images.tnLogo} alt="Right Logo" width={32} height={32} style={{ objectFit: "contain", mixBlendMode: "multiply" }} />
                   </div>
-                  <div
-                    style={{
-                      color: "#FFD54F",
-                      fontSize: "0.78rem",
-                      fontWeight: 800,
-                      textTransform: "uppercase",
-                      letterSpacing: "0.03em",
-                      lineHeight: 1.3,
-                      position: "relative",
-                    }}
-                  >
-                    Government Arts & Science College
+                </div>
+
+                {/* College Info */}
+                <div style={{ padding: "0.5rem 1rem", textAlign: "center" }}>
+                  <div style={{ color: "#0D47A1", fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase" }}>
+                    GOVERNMENT ARTS & SCIENCE COLLEGE
                   </div>
-                  <div
-                    style={{
-                      color: "rgba(255,255,255,0.9)",
-                      fontSize: "0.68rem",
-                      fontWeight: 500,
-                      marginTop: "2px",
-                      position: "relative",
-                    }}
-                  >
+                  <div style={{ color: "#0D47A1", fontSize: "0.65rem", fontWeight: 600 }}>
                     Thittamalai, Nambiyur – 638 458.
                   </div>
                 </div>
 
-                <div style={{ padding: "1.25rem 1.5rem 1rem", textAlign: "center" }}>
+                {/* Photo & Details */}
+                <div style={{ padding: "0.5rem 1.5rem 1rem", textAlign: "center" }}>
                   <div
                     style={{
-                      width: "120px",
-                      height: "140px",
+                      width: "130px",
+                      height: "150px",
                       margin: "0 auto 1rem",
-                      borderRadius: "10px",
-                      overflow: "hidden",
-                      border: "3px solid #1565C0",
-                      boxShadow:
-                        "0 4px 15px rgba(21,101,192,0.25), 0 0 0 3px rgba(21,101,192,0.08)",
+                      border: "2px solid #AB47BC",
+                      padding: "2px",
+                      background: "white"
                     }}
                   >
                     <Image
                       src={siteConfig.images.portrait}
                       alt={`${profile.fullName} — Portrait`}
-                      width={120}
-                      height={140}
+                      width={126}
+                      height={146}
                       style={{ objectFit: "cover", width: "100%", height: "100%" }}
                       priority
                     />
                   </div>
-                  <div
-                    style={{
-                      fontSize: "1.05rem",
-                      fontWeight: 800,
-                      color: "#0D47A1",
-                      marginBottom: "0.5rem",
-                      letterSpacing: "0.02em",
-                    }}
-                  >
+                  <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "#0D47A1", marginBottom: "0.6rem" }}>
                     Dr GURUMOORTHI VELUSAMY
                   </div>
                   <div
                     style={{
                       display: "inline-block",
-                      padding: "0.3rem 1rem",
-                      background: "linear-gradient(135deg, #1565C0, #0D47A1)",
+                      padding: "0.4rem 1.25rem",
+                      background: "#1565C0",
                       color: "white",
-                      fontSize: "0.7rem",
+                      fontSize: "0.75rem",
                       fontWeight: 700,
-                      borderRadius: "20px",
+                      borderRadius: "6px",
                       textTransform: "uppercase",
-                      letterSpacing: "0.08em",
-                      marginBottom: "0.5rem",
-                      boxShadow: "0 2px 8px rgba(21,101,192,0.3)",
+                      letterSpacing: "0.05em",
+                      marginBottom: "0.6rem",
                     }}
                   >
-                    Assistant Professor
+                    ASSISTANT PROFESSOR
                   </div>
-                  <div
-                    style={{
-                      fontSize: "1rem",
-                      fontWeight: 800,
-                      color: "#0D47A1",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.03em",
-                    }}
-                  >
-                    Commerce
+                  <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "#0D47A1", textTransform: "uppercase" }}>
+                    COMMERCE
                   </div>
                 </div>
 
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    padding: "0 1.5rem 0.75rem",
-                  }}
-                >
-                  <div className="barcode">
+                {/* Barcode & Bottom Gradient */}
+                <div style={{ position: "absolute", bottom: "1.5rem", left: "1.5rem", display: "flex", alignItems: "center" }}>
+                  <div className="barcode" style={{ display: "flex", alignItems: "flex-end", height: "40px", gap: "1px" }}>
                     {barcodeBars.map((bar, i) => (
-                      <div
-                        key={i}
-                        className="bar"
-                        style={{ width: `${bar.w}px`, height: `${bar.h}px` }}
-                      />
+                      <div key={i} style={{ width: `${bar.w}px`, height: `${bar.h + 15}px`, background: "#333" }} />
                     ))}
                   </div>
                 </div>
-
-                {/* Bottom accent */}
                 <div
                   style={{
                     position: "absolute",
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    height: "30px",
-                    overflow: "hidden",
+                    bottom: "1.5rem",
+                    right: "1rem",
+                    width: "120px",
+                    height: "40px",
+                    background: "linear-gradient(90deg, transparent, #1565C0, #0D47A1)",
                   }}
-                >
-                  <div
-                    style={{
-                      position: "absolute",
-                      bottom: 0,
-                      left: -10,
-                      width: "120px",
-                      height: "60px",
-                      background: "linear-gradient(135deg, #E040FB, #CE93D8)",
-                      borderTopRightRadius: "80px",
-                      opacity: 0.7,
-                    }}
-                  />
-                  <div
-                    style={{
-                      position: "absolute",
-                      bottom: 0,
-                      right: 0,
-                      width: "200px",
-                      height: "30px",
-                      background: "linear-gradient(90deg, transparent, #1565C0, #0D47A1)",
-                      opacity: 0.8,
-                    }}
-                  />
-                </div>
+                />
               </div>
 
               {/* ─── BACK ─── */}
@@ -610,38 +506,42 @@ export function HeroSection() {
                   transform: "rotateY(180deg)",
                   borderRadius: "20px",
                   overflow: "hidden",
-                  background: "linear-gradient(180deg, #ffffff 0%, #f0f4ff 100%)",
+                  background: "#ffffff",
                   border: "1px solid rgba(21,101,192,0.15)",
                 }}
               >
-                <div style={{ padding: "2rem 1.75rem" }}>
+                {/* Purple corner accents */}
+                <div style={{ position: "absolute", top: -40, right: -40, width: 80, height: 80, background: "#AB47BC", transform: "rotate(45deg)", opacity: 0.8 }} />
+                <div style={{ position: "absolute", bottom: -40, left: -40, width: 80, height: 80, background: "#AB47BC", transform: "rotate(45deg)", opacity: 0.8 }} />
+                
+                <div style={{ padding: "2.5rem 1.5rem" }}>
                   <div
                     style={{
                       textAlign: "center",
                       fontSize: "1rem",
                       fontWeight: 800,
-                      color: "#1565C0",
+                      color: "#0D47A1",
                       textTransform: "uppercase",
                       letterSpacing: "0.05em",
                       marginBottom: "1.5rem",
-                      paddingBottom: "0.75rem",
-                      borderBottom: "2px solid #E3F2FD",
+                      textDecoration: "underline",
+                      textUnderlineOffset: "4px"
                     }}
                   >
-                    Personal Information
+                    PERSONAL INFORMATION
                   </div>
                   {[
                     { label: "Father Name", value: profile.fatherName },
                     { label: "Address", value: profile.address },
                     { label: "Email", value: profile.email },
                     { label: "Phone", value: profile.phone.replace("+91 ", "") },
+                    { label: "Aadhar", value: "***853293217" },
                     { label: "Blood Group", value: profile.bloodGroup },
                   ].map((row) => (
                     <div
                       key={row.label}
                       style={{
                         display: "flex",
-                        gap: "0.75rem",
                         marginBottom: "0.85rem",
                         fontSize: "0.82rem",
                         lineHeight: 1.5,
@@ -650,69 +550,36 @@ export function HeroSection() {
                       <span
                         style={{
                           fontWeight: 700,
-                          color: "#1565C0",
-                          minWidth: "90px",
+                          color: "#0D47A1",
+                          width: "95px",
                           flexShrink: 0,
                         }}
                       >
                         {row.label}
                       </span>
-                      <span style={{ color: "#333" }}>: {row.value}</span>
+                      <span style={{ color: "#333", flex: 1, paddingLeft: "10px" }}>: {row.value}</span>
                     </div>
                   ))}
                 </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    padding: "0 1.5rem",
-                    marginTop: "auto",
-                  }}
-                >
-                  <div className="barcode">
+                
+                {/* Barcode & Bottom Gradient */}
+                <div style={{ position: "absolute", bottom: "1.5rem", left: "1.5rem", display: "flex", alignItems: "center" }}>
+                  <div className="barcode" style={{ display: "flex", alignItems: "flex-end", height: "40px", gap: "1px" }}>
                     {barcodeBars.map((bar, i) => (
-                      <div
-                        key={i}
-                        className="bar"
-                        style={{ width: `${bar.w}px`, height: `${bar.h}px` }}
-                      />
+                      <div key={i} style={{ width: `${bar.w}px`, height: `${bar.h + 15}px`, background: "#333" }} />
                     ))}
                   </div>
                 </div>
                 <div
                   style={{
                     position: "absolute",
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    height: "30px",
-                    overflow: "hidden",
+                    bottom: "1.5rem",
+                    right: "1rem",
+                    width: "120px",
+                    height: "40px",
+                    background: "linear-gradient(90deg, transparent, #1565C0, #0D47A1)",
                   }}
-                >
-                  <div
-                    style={{
-                      position: "absolute",
-                      bottom: 0,
-                      left: -10,
-                      width: "120px",
-                      height: "60px",
-                      background: "linear-gradient(135deg, #E040FB, #CE93D8)",
-                      borderTopRightRadius: "80px",
-                      opacity: 0.7,
-                    }}
-                  />
-                  <div
-                    style={{
-                      position: "absolute",
-                      bottom: 0,
-                      right: 0,
-                      width: "200px",
-                      height: "30px",
-                      background: "linear-gradient(90deg, transparent, #1565C0, #0D47A1)",
-                      opacity: 0.8,
-                    }}
-                  />
-                </div>
+                />
               </div>
             </motion.div>
           </motion.div>
