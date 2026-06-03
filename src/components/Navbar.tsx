@@ -191,6 +191,7 @@ export function Navbar() {
         >
           {mobileOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
+      </nav>
       </header>
 
       {/* Mobile Drawer */}
