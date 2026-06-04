@@ -6,12 +6,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { SectionHeading } from "./SectionHeading";
 import { profile } from "@/data/profile";
 import { siteConfig } from "@/data/siteConfig";
-import { BookOpen, Award, Users, Sparkles } from "lucide-react";
+import { BookOpen, Users, Sparkles, GraduationCap } from "lucide-react";
 
 const highlights = [
   { icon: BookOpen, label: "Research Papers", value: "6+" },
-  { icon: Award, label: "NET / SET Qualified", value: "✓" },
-  { icon: Users, label: "Years Teaching", value: "8+" },
+  { icon: GraduationCap, label: "Guided Students", value: "Ph.D / M.Phil." },
+  { icon: Users, label: "Years Teaching", value: "10+" },
 ];
 
 export function AboutSection() {

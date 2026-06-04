@@ -87,60 +87,60 @@ export const education: EducationItem[] = [
   {
     degree: "Ph.D.",
     field: "Commerce",
-    institution: "Periyar University",
-    university: "Periyar University, Salem",
+    institution: "Kaamadheu ASC, Sathyamangalam",
+    university: "Bharathiar University, Coimbatore",
     year: "2020",
     details: "Doctoral research in Commerce with specialization in financial studies and business management.",
   },
   {
     degree: "M.Phil.",
     field: "Commerce",
-    institution: "Periyar University",
-    university: "Periyar University, Salem",
+    institution: "Kaamadheu ASC, Sathyamangalam",
+    university: "Bharathiar University, Coimbatore",
     year: "2014",
     details: "Master of Philosophy in Commerce — research-oriented postgraduate degree.",
   },
   {
     degree: "M.Com.",
     field: "Commerce",
-    institution: "Government Arts College",
-    university: "Periyar University, Salem",
-    year: "2013",
+    institution: "Kaamadheu ASC, Sathyamangalam",
+    university: "Bharathiar University, Coimbatore",
+    year: "2012",
     details: "Master of Commerce with advanced studies in accounting, finance, and business.",
   },
   {
     degree: "B.Com.",
     field: "Commerce",
-    institution: "Government Arts College",
-    university: "Periyar University, Salem",
-    year: "2011",
+    institution: "Kaamadheu ASC, Sathyamangalam",
+    university: "Bharathiar University, Coimbatore",
+    year: "2010",
     details: "Bachelor of Commerce — foundation in accounting, economics, and business administration.",
   },
 ];
 
 export const experience: ExperienceItem[] = [
   {
-    title: "Assistant Professor",
+    title: "Guest Lecturer",
     institution: "Government Arts & Science College",
     location: "Thittamalai, Nambiyur – 638 458, Tamil Nadu",
-    from: "2022",
+    from: "2023",
     to: "Present",
     description:
       "Teaching undergraduate and postgraduate Commerce courses. Guiding students in research projects and academic activities. Contributing to departmental development and college administration.",
   },
   {
-    title: "Guest Lecturer",
-    institution: "Government Arts College",
-    location: "Erode, Tamil Nadu",
+    title: "Research Guidance",
+    institution: "Kaamadheu ASC, Sathyamangalam",
+    location: "Thittamalai, Nambiyur – 638 458, Tamil Nadu",
     from: "2018",
     to: "2022",
     description:
-      "Delivered lectures in Commerce and Business Studies. Mentored students in academic and career development.",
+      "Guiding M.Phil. and Ph.D. students in research methodology, literature review, data analysis, and thesis writing. Providing mentorship in academic research and scholarly writing.",
   },
   {
     title: "Research Scholar",
-    institution: "Periyar University",
-    location: "Salem, Tamil Nadu",
+    institution: "Kaamadheu ASC, Sathyamangalam",
+    location: "Erode, Tamil Nadu",
     from: "2015",
     to: "2020",
     description:
@@ -194,11 +194,6 @@ export const publications: PublicationItem[] = [
 ];
 
 export const achievements: AchievementItem[] = [
-  {
-    title: "NET / SET Qualified",
-    year: "2016",
-    description: "Cleared UGC NET and TNSET examinations in Commerce, qualifying for Assistant Professor position.",
-  },
   {
     title: "Ph.D. in Commerce",
     year: "2020",

@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://drgurumoorthi-ap-commerce.vercel.app/sitemap.xml
