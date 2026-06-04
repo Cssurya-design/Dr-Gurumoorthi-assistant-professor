@@ -15,6 +15,7 @@ export const siteConfig = {
 
   keywords: [
     "Dr. V. Gurumoorthi",
+    "drgurumoorthi",
     "Dr. Gurumoorthi Velusamy",
     "Assistant Professor",
     "Commerce",
@@ -46,6 +47,7 @@ export const siteConfig = {
     gallery2: "/images/gallery-2.jpeg",
     tnLogo: "/images/tn-logo.jpeg",
     brandLogo: "/images/brand-logo.png",
+    sharePreview: "/images/share-preview.png",
   },
 
   documents: {

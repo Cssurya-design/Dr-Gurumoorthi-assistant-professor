@@ -17,11 +17,8 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : siteConfig.siteUrl);
-
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(siteConfig.siteUrl),
   applicationName: siteConfig.name,
   title: `${siteConfig.name} | ${siteConfig.title} | ${siteConfig.college}`,
   description: siteConfig.description,
@@ -43,9 +40,17 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: `${baseUrl}${siteConfig.images.portrait}`,
-        width: 800,
-        height: 800,
+        url: siteConfig.images.portrait,
+        width: 912,
+        height: 1149,
+        type: "image/jpeg",
+        alt: `${siteConfig.fullName} portrait`,
+      },
+      {
+        url: siteConfig.images.sharePreview,
+        width: 1200,
+        height: 630,
+        type: "image/png",
         alt: `${siteConfig.fullName} - ${siteConfig.title}`,
       },
     ],
@@ -55,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} | ${siteConfig.title}`,
     description: siteConfig.description,
-    images: [`${baseUrl}${siteConfig.images.portrait}`],
+    images: [siteConfig.images.portrait],
   },
   robots: {
     index: true,
