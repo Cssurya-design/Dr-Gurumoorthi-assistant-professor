@@ -46,13 +46,6 @@ export const metadata: Metadata = {
         type: "image/jpeg",
         alt: `${siteConfig.fullName} portrait`,
       },
-      {
-        url: siteConfig.images.sharePreview,
-        width: 1200,
-        height: 630,
-        type: "image/png",
-        alt: `${siteConfig.fullName} - ${siteConfig.title}`,
-      },
     ],
     locale: "en_IN",
   },
