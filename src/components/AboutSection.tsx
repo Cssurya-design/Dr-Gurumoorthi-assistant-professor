@@ -79,7 +79,7 @@ export function AboutSection() {
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="w-full max-w-[290px] aspect-[290/340] mx-auto lg:mx-0"
+              className="w-[290px] max-w-full aspect-[290/340] mx-auto lg:mx-0"
               style={{
                 borderRadius: "var(--radius-lg)",
                 overflow: "hidden",

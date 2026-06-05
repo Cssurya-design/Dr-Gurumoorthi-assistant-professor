@@ -68,7 +68,10 @@ function Bubble({ social, index }: { social: any; index: number }) {
       }
       className="flex items-center justify-center w-10 h-10 md:w-[50px] md:h-[50px] rounded-full bg-[#0a1628]/70 backdrop-blur-md border border-[#d4a843]/40 text-white shadow-[0_8px_16px_rgba(0,0,0,0.4),_0_0_10px_rgba(212,168,67,0.2)] cursor-pointer relative no-underline"
     >
-      <div className="scale-75 md:scale-100 flex items-center justify-center">
+      <div 
+        className="scale-75 md:scale-100 flex items-center justify-center"
+        style={{ color: isHovered ? social.color : "#fff", transition: "color 0.3s ease" }}
+      >
         <social.icon size={22} />
       </div>
       

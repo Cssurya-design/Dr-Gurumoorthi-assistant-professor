@@ -104,22 +104,22 @@ export function Footer() {
         <div className="flex flex-col items-center md:items-end gap-3">
           <div style={{ display: "flex", gap: "1.25rem" }}>
             {siteConfig.social.googleScholar && (
-              <a href={siteConfig.social.googleScholar} target="_blank" rel="noreferrer" aria-label="Google Scholar" style={{ color: "rgba(255,255,255,0.4)", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "#FFD54F"} onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.4)"}>
+              <a href={siteConfig.social.googleScholar} target="_blank" rel="noreferrer" aria-label="Google Scholar" style={{ color: "rgba(255,255,255,0.4)", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "#4285F4"} onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.4)"}>
                 <GraduationCap size={18} />
               </a>
             )}
             {siteConfig.social.linkedin && (
-              <a href={siteConfig.social.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" style={{ color: "rgba(255,255,255,0.4)", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "#FFD54F"} onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.4)"}>
+              <a href={siteConfig.social.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" style={{ color: "rgba(255,255,255,0.4)", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "#0077b5"} onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.4)"}>
                 <LinkedinIcon />
               </a>
             )}
             {siteConfig.social.Instagram && (
-              <a href={siteConfig.social.Instagram} target="_blank" rel="noreferrer" aria-label="Instagram" style={{ color: "rgba(255,255,255,0.4)", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "#FFD54F"} onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.4)"}>
+              <a href={siteConfig.social.Instagram} target="_blank" rel="noreferrer" aria-label="Instagram" style={{ color: "rgba(255,255,255,0.4)", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "#E1306C"} onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.4)"}>
                 <InstagramIcon />
               </a>
             )}
             {siteConfig.social.Youtube && (
-              <a href={siteConfig.social.Youtube} target="_blank" rel="noreferrer" aria-label="YouTube" style={{ color: "rgba(255,255,255,0.4)", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "#FFD54F"} onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.4)"}>
+              <a href={siteConfig.social.Youtube} target="_blank" rel="noreferrer" aria-label="YouTube" style={{ color: "rgba(255,255,255,0.4)", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "#FF0000"} onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.4)"}>
                 <YoutubeIcon />
               </a>
             )}
