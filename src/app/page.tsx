@@ -6,6 +6,7 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { ResearchSection } from "@/components/ResearchSection";
 import { AchievementsSection } from "@/components/AchievementsSection";
 import { GallerySection } from "@/components/GallerySection";
+import { PresentationsSection } from "@/components/PresentationsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 
@@ -18,8 +19,9 @@ export default function HomePage() {
         <AboutSection />
         <EducationSection />
         <ExperienceSection />
-        <ResearchSection />
         <AchievementsSection />
+        <ResearchSection />
+        <PresentationsSection />
         <GallerySection />
         <ContactSection />
       </main>
