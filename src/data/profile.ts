@@ -64,8 +64,8 @@ export interface DocumentLink {
 // ── Data ─────────────────────────────────────────────────────
 
 export const profile: Profile = {
-  name: "Dr. V. Gurumoorthi",
-  fullName: "Dr. Gurumoorthi Velusamy",
+  name: "DR. V. GURUMOORTHI",
+  fullName: "DR. V. GURUMOORTHI VELUSAMY",
   fatherName: "R. K. Velusamy",
   designation: "Assistant Professor",
   department: "Department of Commerce",
@@ -87,7 +87,7 @@ export const education: EducationItem[] = [
   {
     degree: "Ph.D.",
     field: "Commerce",
-    institution: "Kaamadheu ASC, Sathyamangalam",
+    institution: "Kaamadheu Arts & Science College, Sathyamangalam",
     university: "Bharathiar University, Coimbatore",
     year: "2020",
     details: "Doctoral research in Commerce with specialization in financial studies and business management.",
@@ -95,7 +95,7 @@ export const education: EducationItem[] = [
   {
     degree: "M.Phil.",
     field: "Commerce",
-    institution: "Kaamadheu ASC, Sathyamangalam",
+    institution: "Kaamadheu Arts & Science College, Sathyamangalam",
     university: "Bharathiar University, Coimbatore",
     year: "2014",
     details: "Master of Philosophy in Commerce — research-oriented postgraduate degree.",
@@ -103,7 +103,7 @@ export const education: EducationItem[] = [
   {
     degree: "M.Com.",
     field: "Commerce",
-    institution: "Kaamadheu ASC, Sathyamangalam",
+    institution: "Kaamadheu Arts & Science College, Sathyamangalam",
     university: "Bharathiar University, Coimbatore",
     year: "2012",
     details: "Master of Commerce with advanced studies in accounting, finance, and business.",
@@ -111,7 +111,7 @@ export const education: EducationItem[] = [
   {
     degree: "B.Com.",
     field: "Commerce",
-    institution: "Kaamadheu ASC, Sathyamangalam",
+    institution: "Kaamadheu Arts & Science College, Sathyamangalam",
     university: "Bharathiar University, Coimbatore",
     year: "2010",
     details: "Bachelor of Commerce — foundation in accounting, economics, and business administration.",
@@ -129,8 +129,17 @@ export const experience: ExperienceItem[] = [
       "Teaching undergraduate and postgraduate Commerce courses. Guiding students in research projects and academic activities. Contributing to departmental development and college administration.",
   },
   {
+    title: "Assistant Professor",
+    institution: "Dr. NGP Arts & Science College, Coimbatore",
+    location: "Kalapatti Main Rd, Sharp Nagar, Nehru Nagar West - 641 048, Tamil Nadu",
+    from: "2022",
+    to: "2023",
+    description:
+      "Teaching undergraduate and postgraduate Commerce courses. Guiding students in research projects and academic activities. Contributing to departmental development and college administration.",
+  },
+  {
     title: "Research Guidance",
-    institution: "Kaamadheu ASC, Sathyamangalam",
+    institution: "Kaamadheu Arts & Science College, Sathyamangalam",
     location: "Thittamalai, Nambiyur – 638 458, Tamil Nadu",
     from: "2018",
     to: "2022",
@@ -139,7 +148,7 @@ export const experience: ExperienceItem[] = [
   },
   {
     title: "Research Scholar",
-    institution: "Kaamadheu ASC, Sathyamangalam",
+    institution: "Kaamadheu Arts & Science College, Sathyamangalam",
     location: "Erode, Tamil Nadu",
     from: "2015",
     to: "2020",
@@ -195,9 +204,14 @@ export const publications: PublicationItem[] = [
 
 export const achievements: AchievementItem[] = [
   {
+    title: "Eco club Co-ordinator",
+    year: "2025",
+    description: "Eco Club Activity , World Environment Day 31th january 2025.",
+  },
+  {
     title: "Ph.D. in Commerce",
     year: "2020",
-    description: "Successfully defended doctoral thesis at Periyar University, Salem.",
+    description: "Successfully defended doctoral thesis at Kaamadheu Arts & Science College, Sathyamangalam.",
   },
   {
     title: "Best Paper Award",

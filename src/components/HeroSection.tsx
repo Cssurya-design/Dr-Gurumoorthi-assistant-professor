@@ -358,14 +358,14 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.85, rotateY: -15 }}
           animate={{ opacity: 1, scale: 1, rotateY: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          className="flex-none perspective-[1200px] cursor-pointer"
+          className="flex-none perspective-[1200px] cursor-pointer w-full max-w-[340px] mx-auto lg:mx-0 mt-8 lg:mt-0"
           style={{
             y: cardY,
           }}
           onClick={() => setFlipped(!flipped)}
         >
           <motion.div
-            className="w-[310px] h-[460px] sm:w-[340px] sm:h-[500px] mx-auto scale-95 sm:scale-100 origin-center"
+            className="w-full aspect-[340/500] mx-auto origin-center"
             style={{
               transformStyle: "preserve-3d",
               rotateX,

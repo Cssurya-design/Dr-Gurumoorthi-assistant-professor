@@ -11,7 +11,7 @@ import { BookOpen, Users, Sparkles, GraduationCap } from "lucide-react";
 const highlights = [
   { icon: BookOpen, label: "Research Papers", value: "6+" },
   { icon: GraduationCap, label: "Guided Students", value: "Ph.D / M.Phil." },
-  { icon: Users, label: "Years Teaching", value: "10+" },
+  { icon: Users, label: "Years Teaching", value: "12+" },
 ];
 
 export function AboutSection() {
@@ -79,9 +79,8 @@ export function AboutSection() {
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
+              className="w-full max-w-[290px] aspect-[290/340] mx-auto lg:mx-0"
               style={{
-                width: "290px",
-                height: "340px",
                 borderRadius: "var(--radius-lg)",
                 overflow: "hidden",
                 boxShadow: "0 20px 50px rgba(26,58,107,0.2), 0 0 0 1px rgba(26,58,107,0.05)",
@@ -94,7 +93,7 @@ export function AboutSection() {
                 alt={`${profile.fullName} — About`}
                 fill
                 style={{ objectFit: "cover" }}
-                sizes="290px"
+                sizes="(max-width: 768px) 100vw, 290px"
               />
               {/* Gradient overlay at bottom */}
               <div
@@ -132,7 +131,7 @@ export function AboutSection() {
                 border: "2px solid white",
               }}
             >
-              <Sparkles size={14} /> Ph.D. Scholar
+              <Sparkles size={14} /> Assistant Professor
             </motion.div>
             {/* Decorative shapes */}
             <div

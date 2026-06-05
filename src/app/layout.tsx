@@ -4,6 +4,7 @@ import "./globals.css";
 import { siteConfig } from "@/data/siteConfig";
 import { JsonLd } from "@/components/JsonLd";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { FloatingSocials } from "@/components/FloatingSocials";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -79,6 +80,7 @@ export default function RootLayout({
         <SmoothScroll>
           <JsonLd />
           {children}
+          <FloatingSocials />
         </SmoothScroll>
       </body>
     </html>

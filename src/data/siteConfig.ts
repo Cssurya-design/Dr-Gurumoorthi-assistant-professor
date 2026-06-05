@@ -14,31 +14,19 @@ export const siteConfig = {
     "Dr. V. Gurumoorthi — Assistant Professor of Commerce at Government Arts & Science College, Thittamalai, Nambiyur, Tamil Nadu. Researcher, educator, and academic professional.",
 
   keywords: [
-    "Dr. V. Gurumoorthi",
+    "Dr.v.gurumoorthi",
     "drgurumoorthi",
-    "Dr. Gurumoorthi Velusamy",
-    "Assistant Professor",
-    "Commerce",
-    "Government Arts and Science College",
-    "Thittamalai",
-    "Nambiyur",
-    "Tamil Nadu",
-    "Academic Portfolio",
-    "Research",
-    "Publications",
-    "Higher Education",
-    "Department of Collegiate Education",
+    "Dr.gurumoorthi velusamy",
   ],
 
   email: "guruyindia@gmail.com",
   phone: "+91 9944820381",
 
   social: {
-    // Add social links as available
-    googleScholar: "",
-    researchGate: "",
-    linkedin: "",
-    orcid: "",
+    googleScholar: "https://scholar.google.com/citations?user=WG21UZMAAAAJ&hl=en",
+    Instagram: "https://www.instagram.com/gurumoorthi.velusamy/",
+    Youtube: "https://www.youtube.com/@moderngurukulam1750",
+    linkedin: "https://www.linkedin.com/in/gurumoorthi-v-72b95964/",
   },
 
   images: {

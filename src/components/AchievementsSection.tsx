@@ -4,10 +4,9 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { SectionHeading } from "./SectionHeading";
 import { achievements } from "@/data/profile";
-import { Trophy, Award, BookOpen, Star, CheckCircle, Users } from "lucide-react";
+import { Trophy, Award, BookOpen, Star, Users } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
-  "NET / SET Qualified": CheckCircle,
   "Ph.D. in Commerce": Award,
   "Best Paper Award": Trophy,
   "FDP Completion": BookOpen,
