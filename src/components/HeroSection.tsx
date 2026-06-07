@@ -11,7 +11,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { siteConfig } from "@/data/siteConfig";
-import { profile } from "@/data/profile";
+import { profile, education } from "@/data/profile";
 import { ChevronDown } from "lucide-react";
 
 // Barcode bars (deterministic for hydration)
@@ -262,6 +262,9 @@ export function HeroSection() {
               }}
             >
               {profile.designation}
+            </span>
+            <span style={{ fontWeight: 600, fontSize: "0.95rem", color: "rgba(255,255,255,0.9)", letterSpacing: "0.05em" }}>
+              {education.map(e => e.degree).join(", ")}
             </span>
             <span style={{ fontWeight: 500 }}>{profile.department}</span>
             <span style={{ fontSize: "0.92rem", color: "rgba(255,255,255,0.6)" }}>
