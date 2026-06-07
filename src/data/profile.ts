@@ -71,7 +71,7 @@ export interface PresentationItem {
 
 export const profile: Profile = {
   name: "DR. V. GURUMOORTHI",
-  fullName: "DR. V. GURUMOORTHI VELUSAMY",
+  fullName: "Dr. V. GURUMOORTHI VELUSAMY",
   fatherName: "R. K. Velusamy",
   designation: "Assistant Professor",
   department: "Department of Commerce",
@@ -173,6 +173,31 @@ export const experience: ExperienceItem[] = [
 ];
 export const achievements: AchievementItem[] = [
   {
+    title: "Best Faculty Award",
+    year: "2025",
+    description: "TNGSTPA on GST Seminar",
+  },
+  {
+    title: "Guinness World Record 2023",
+    year: "2023",
+    description: "World Thickest Book (Chapter)",
+  },
+  {
+    title: "Seed Money for Proposal",
+    year: "2021",
+    description: "Dr. NGP Arts and Science College, Coimbatore.",
+  },
+  {
+    title: "Best Academic Performer",
+    year: "2017 & 2019",
+    description: "Kaamadhenu Arts and Science College, Sathyamangalam",
+  },
+  {
+    title: "Best Outgoing Student Award (PG)",
+    year: "2012",
+    description: "Kaamadhenu Arts and Science College, Sathyamangalam",
+  },
+  {
     title: "Eco club Co-ordinator",
     year: "2025",
     description: "Eco Club Activity , World Environment Day 31th january 2025.",
@@ -180,7 +205,7 @@ export const achievements: AchievementItem[] = [
   {
     title: "Ph.D. in Commerce",
     year: "2020",
-    description: "Successfully defended doctoral thesis at Kaamadheu Arts & Science College, Sathyamangalam.",
+    description: "Successfully defended doctoral thesis at Kaamadhenu Arts & Science College, Sathyamangalam.",
   },
   {
     title: "Best Paper Award",
